@@ -1,0 +1,7 @@
+{
+  "name": "Star Token",
+  "id": "886020015633043493",
+  "api": "1.0.0",
+  "main": "dist/code.js",
+  "ui": "dist/ui.html"
+}

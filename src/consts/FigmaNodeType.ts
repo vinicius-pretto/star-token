@@ -1,0 +1,19 @@
+enum FigmaNodeType {
+  DOCUMENT = "DOCUMENT",
+  PAGE = "PAGE",
+  SLICE = "SLICE",
+  FRAME = "FRAME",
+  GROUP = "GROUP",
+  COMPONENT = "COMPONENT",
+  INSTANCE = "INSTANCE",
+  BOOLEAN_OPERATION = "BOOLEAN_OPERATION",
+  VECTOR = "VECTOR",
+  STAR = "STAR",
+  LINE = "LINE",
+  ELLIPSE = "ELLIPSE",
+  POLYGON = "POLYGON",
+  RECTANGLE = "RECTANGLE",
+  TEXT = "TEXT",
+}
+
+export default FigmaNodeType;

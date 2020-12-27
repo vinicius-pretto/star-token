@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="active"
+    id="modal"
+  >
+    <div
+      class="modal-dialog"
+    >
+      <div
+        class="modal-dialog-header"
+      >
+        <h2
+          class="section-title"
+        >
+          Colors
+        </h2>
+        <div
+          aria-label="Close"
+          class="icon-button"
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="icon icon--close"
+          />
+        </div>
+      </div>
+      <div
+        class="modal-dialog-body"
+      >
+        <div>
+          Content
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

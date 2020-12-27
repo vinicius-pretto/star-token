@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v2/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hjp-Ek-_EeA.woff)
+    format("woff2");
+  unicode-range: U+0000-00FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v2/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF;
+}
+
+@import "./variables";
+@import "./utility";
+@import "./modal";
+
+html {
+  box-sizing: border-box;
+  font-family: var(--font-family-base);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+ul {
+  margin: 0;
+  font-size: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  color: var(--color-dark);
+  font-size: var(--font-size-base);
+}
+
+button,
+a {
+  font-family: inherit;
+}
+
+.tokens-section {
+  padding: var(--spacing-md) var(--spacing-sm);
+}
+
+.tokens-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* color tokens */
+.color-token {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: var(--spacing-sm);
+  font-size: inherit;
+  color: var(--color-dark);
+}
+
+.color-token-shape {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background-color: var(--color-gray-light);
+  border-radius: var(--border-radius-circle);
+}
+
+.font-token-shape {
+  font-size: 18px;
+}
+
+.border-radius-shape {
+  width: 30;
+  height: 18px;
+  display: inline-block;
+  background-color: transparent;
+  border-style: dashed;
+  border-width: 1px;
+  border-color: var(--color-dark);
+  line-height: 1.5;
+}
+
+.highlight {
+  margin: 0;
+  padding: var(--spacing-md);
+  font-size: var(--font-size-base);
+  font-family: inherit;
+  background-color: var(--color-gray-10);
+  border-radius: var(--border-radius-base);
+}
+
+.highlight pre {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.error {
+  margin-top: var(--spacing-xs);
+  margin-bottom: 0;
+  color: var(--color-danger);
+}
+
+.form-group {
+  min-height: 48px;
+}
+
+.color-token-edit-btn {
+  visibility: hidden;
+  transition: all 0.2s ease-out;
+  opacity: 0;
+}
+
+.color-token-container:hover {
+  background-color: var(--color-blue-light);
+}
+
+.color-token-container:hover .visibility-hidden {
+  visibility: visible;
+  opacity: 1;
+}

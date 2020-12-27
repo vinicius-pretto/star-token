@@ -1,0 +1,296 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BorderRadiusTokens snapshot no color tokens 1`] = `
+<DocumentFragment>
+  <section
+    class="border-bottom p-sm"
+  >
+    <div
+      class="tokens-section-header"
+    >
+      <h3
+        class="section-title"
+      >
+        Border Radius
+      </h3>
+      <div
+        aria-label="Add token"
+        class="icon-button"
+        data-testid="add-token-btn"
+        role="button"
+        tabindex="0"
+      >
+        <div
+          class="icon icon--plus"
+        />
+      </div>
+    </div>
+    <p
+      class="label my-0"
+    >
+      No border radius tokens
+    </p>
+    <div
+      class=""
+      id="modal"
+    >
+      <div
+        class="modal-dialog"
+      >
+        <div
+          class="modal-dialog-header"
+        >
+          <h2
+            class="section-title"
+          >
+            Border Radius
+          </h2>
+          <div
+            aria-label="Close"
+            class="icon-button"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              class="icon icon--close"
+            />
+          </div>
+        </div>
+        <div
+          class="modal-dialog-body"
+        >
+          <form>
+            <div
+              class="input mb-sm form-group"
+            >
+              <input
+                class="input__field"
+                id="name"
+                placeholder="border-radius-base"
+                type="text"
+                value=""
+              />
+              <p
+                class="visibility-hidden"
+              />
+            </div>
+            <div
+              class="input mb-sm form-group"
+            >
+              <input
+                class="input__field"
+                id="value"
+                maxlength="6"
+                placeholder="4"
+                type="text"
+                value=""
+              />
+              <p
+                class="visibility-hidden"
+              />
+            </div>
+            <div
+              class="d-flex justify-content-end"
+            >
+              <button
+                class="button button--primary"
+                type="submit"
+              >
+                Save
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`BorderRadiusTokens snapshot with color tokens 1`] = `
+<DocumentFragment>
+  <section
+    class="border-bottom p-sm"
+  >
+    <div
+      class="tokens-section-header"
+    >
+      <h3
+        class="section-title"
+      >
+        Border Radius
+      </h3>
+      <div
+        aria-label="Add token"
+        class="icon-button"
+        data-testid="add-token-btn"
+        role="button"
+        tabindex="0"
+      >
+        <div
+          class="icon icon--plus"
+        />
+      </div>
+    </div>
+    <div
+      class="d-flex flex-row flex-wrap"
+    >
+      <div
+        class="d-flex flex-row align-items-center justify-content-between w-100 color-token-container"
+      >
+        <button
+          class="color-token"
+        >
+          <span
+            class="mr-md border-radius-shape"
+            style="border-radius: 4px;"
+          >
+            4
+          </span>
+          <span>
+            border-radius-base
+          </span>
+        </button>
+        <div
+          class="d-flex flex-row"
+        >
+          <div
+            aria-label="Edit border-radius-base"
+            class="icon-button visibility-hidden"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              class="icon icon--adjust"
+            />
+          </div>
+          <div
+            aria-label="Delete border-radius-base"
+            class="icon-button visibility-hidden"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              class="icon icon--trash"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="d-flex flex-row align-items-center justify-content-between w-100 color-token-container"
+      >
+        <button
+          class="color-token"
+        >
+          <span
+            class="mr-md border-radius-shape"
+            style="border-radius: 50px;"
+          >
+            50
+          </span>
+          <span>
+            border-radius-circle
+          </span>
+        </button>
+        <div
+          class="d-flex flex-row"
+        >
+          <div
+            aria-label="Edit border-radius-circle"
+            class="icon-button visibility-hidden"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              class="icon icon--adjust"
+            />
+          </div>
+          <div
+            aria-label="Delete border-radius-circle"
+            class="icon-button visibility-hidden"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              class="icon icon--trash"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class=""
+      id="modal"
+    >
+      <div
+        class="modal-dialog"
+      >
+        <div
+          class="modal-dialog-header"
+        >
+          <h2
+            class="section-title"
+          >
+            Border Radius
+          </h2>
+          <div
+            aria-label="Close"
+            class="icon-button"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              class="icon icon--close"
+            />
+          </div>
+        </div>
+        <div
+          class="modal-dialog-body"
+        >
+          <form>
+            <div
+              class="input mb-sm form-group"
+            >
+              <input
+                class="input__field"
+                id="name"
+                placeholder="border-radius-base"
+                type="text"
+                value=""
+              />
+              <p
+                class="visibility-hidden"
+              />
+            </div>
+            <div
+              class="input mb-sm form-group"
+            >
+              <input
+                class="input__field"
+                id="value"
+                maxlength="6"
+                placeholder="4"
+                type="text"
+                value=""
+              />
+              <p
+                class="visibility-hidden"
+              />
+            </div>
+            <div
+              class="d-flex justify-content-end"
+            >
+              <button
+                class="button button--primary"
+                type="submit"
+              >
+                Save
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
