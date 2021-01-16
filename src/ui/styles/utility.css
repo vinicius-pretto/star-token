@@ -64,6 +64,10 @@
   margin-bottom: var(--spacing-md);
 }
 
+.ml-sm {
+  margin-left: var(--spacing-sm);
+}
+
 .my-0 {
   margin-top: 0;
   margin-bottom: 0;
@@ -85,6 +89,16 @@
 .py-0 {
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.py-sm {
+  padding-top: var(--spacing-sm);
+  padding-bottom: var(--spacing-sm);
+}
+
+.px-md {
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
 }
 
 .py-xs {
@@ -113,6 +127,10 @@
 
 .pr-md {
   padding-right: var(--spacing-md);
+}
+
+.pl-0 {
+  padding-left: 0;
 }
 
 /* borders */
