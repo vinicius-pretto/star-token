@@ -4,7 +4,7 @@ const tokens = [
   {
     id: "99dd84d3-a355-4a3b-a061-6bab7a8bf285",
     type: TokenType.COLOR,
-    name: "color-dark",
+    name: "color.primary.dark",
     value: "#222222",
   },
   {

@@ -146,14 +146,14 @@ exports[`ColorTokens snapshot with color tokens 1`] = `
             style="background-color: rgb(34, 34, 34);"
           />
           <span>
-            color-dark
+            color.primary.dark
           </span>
         </button>
         <div
           class="d-flex flex-row"
         >
           <div
-            aria-label="Edit color-dark"
+            aria-label="Edit color.primary.dark"
             class="icon-button visibility-hidden"
             role="button"
             tabindex="0"
@@ -163,7 +163,7 @@ exports[`ColorTokens snapshot with color tokens 1`] = `
             />
           </div>
           <div
-            aria-label="Delete color-dark"
+            aria-label="Delete color.primary.dark"
             class="icon-button visibility-hidden"
             role="button"
             tabindex="0"

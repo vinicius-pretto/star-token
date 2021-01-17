@@ -51,9 +51,9 @@ describe("ColorTokens", () => {
         const inputName = screen.getByPlaceholderText("color-primary");
         const submitButton = screen.getByRole("button", { name: /save/i });
         const errorMessage =
-          "Must start with a letter and contain only letters, numbers, hyphens (-), and underscores (_)";
+          "Must start with a letter and contain only letters, numbers, hyphens (-), dots (.), and underscores (_)";
 
-        userEvent.type(inputName, "-/*+");
+        userEvent.type(inputName, "-/.*+");
         await waitFor(() => userEvent.click(submitButton));
 
         expect(screen.getByText(errorMessage)).toBeInTheDocument();
@@ -98,17 +98,17 @@ describe("ColorTokens", () => {
     render(<ColorTokens tokens={tokens} onDelete={jest.fn()} />);
 
     const editButton = screen.getByRole("button", {
-      name: /edit color-dark/i,
+      name: /edit color\.primary\.dark/i,
     });
 
-    userEvent.hover(screen.getByText("color-dark"));
+    userEvent.hover(screen.getByText("color.primary.dark"));
     await waitFor(() => userEvent.click(editButton));
 
     const inputName = screen.getByPlaceholderText("color-primary");
     const inputValue = screen.getByPlaceholderText("#cc0000");
     const submitButton = screen.getByRole("button", { name: /save/i });
 
-    expect(inputName).toHaveValue("color-dark");
+    expect(inputName).toHaveValue("color.primary.dark");
     expect(inputValue).toHaveValue("222222");
 
     await waitFor(() =>

@@ -5,9 +5,11 @@ import TokenType from "../../consts/TokenType";
 
 const UNIT_LENGTH = "px";
 
+const normalize = (name: string) => name.replace(/\./g, "-");
+
 const parseToCSS = (tokens: Token[]) => {
   const cssTokens = tokens
-    .map((token: Token) => `  --${token.name}: ${token.value};`)
+    .map((token: Token) => `  --${normalize(token.name)}: ${token.value};`)
     .join("\n");
 
   return `:root {\n${cssTokens}\n}`;
@@ -15,7 +17,7 @@ const parseToCSS = (tokens: Token[]) => {
 
 const parseToSCSS = (tokens: Token[]) => {
   return tokens
-    .map((token: Token) => `$${token.name}: ${token.value};`)
+    .map((token: Token) => `$${normalize(token.name)}: ${token.value};`)
     .join("\n");
 };
 
